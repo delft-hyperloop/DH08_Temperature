@@ -74,17 +74,6 @@
 //      }
 //  }
 
-// void CANtransmitIndividual(const int* tempIDs, float* Temperature_reading, int size) {
-//     for (int i = 0; i < size; ++i) {
-//         msg.id = tempIDs[i]; // Assign a unique ID for each temperature
-//         msg.len = 2;
-//         int tempInt = static_cast<int>(Temperature_reading[i] * 100); // Convert float to int (with scaling)
-//         msg.buf[0] = (tempInt >> 8) & 0xff;
-//         msg.buf[1] = tempInt & 0xff;
-//         can1.write(msg);
-//     }
-// }
-
 // void setup() {
 //     Serial.begin(9600);
 
